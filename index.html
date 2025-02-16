@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinner Widget Form</title>
+    <style>
+        .spinner-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .spinner-input {
+            width: 50px;
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .spinner-btn {
+            width: 30px;
+            height: 30px;
+            font-size: 18px;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .spinner-btn:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="spinnerForm">
+        <h2>Number Spinner Form</h2>
+        <div class="spinner-container">
+            <button type="button" class="spinner-btn" id="decreaseBtn">-</button>
+            <input type="number" class="spinner-input" id="spinner" name="spinner" value="0" min="0">
+            <button type="button" class="spinner-btn" id="increaseBtn">+</button>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script> <!-- External script to bypass CSP issues -->
+
+</body>
+</html>
